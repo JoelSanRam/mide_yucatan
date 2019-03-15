@@ -1,0 +1,59 @@
+.texto{
+color: #242a30;
+font-size: 16px;
+}
+
+
+.textotitulo{
+color: #432764;
+}
+
+
+.fondotitulo{
+background-color: #eff2ef;
+}
+
+
+.texto2{
+color: #242a30;
+font-size: 11px;
+}
+
+
+.texto3{
+color: #242a30;
+font-size: 9px;
+}
+
+
+.tarjetita{ 
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.dentro{
+    background-color: white;
+    padding: 10px;
+}
+
+.barrafiltro{
+ background-color: #432764;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+}
+
+
+.filtro{
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    padding-left: 15px;
+}
+
+.pad{
+  padding-left: 150px;
+  padding-right: 150px;
+}
