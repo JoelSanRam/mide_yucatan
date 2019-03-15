@@ -25,6 +25,7 @@
     <link href="<?=base_url();?>css/parallax/theme/default.css" id="theme" rel="stylesheet" />
     <link href="<?=base_url();?>css/general/general.css" rel="stylesheet" />
     <link href="<?=base_url();?>css/general/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url();?>plugins/chosen/chosen.css">
     <style type="text/css">
         #chartdiv {
           width: 100%;
@@ -62,19 +63,29 @@
                     
                         <!-- begin info-container -->
                         <div class="row">
-                            <select name="sel1" id="propositoped">
-                                <option value="" disable>Proposito PED</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                            </select>
-                            <select name="sel2" id="temsectorial">
-                                <option value="" disable>Seleccionar indicador</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            </select>
+                            <div class="col-md-2">
+                                <select name="proposito" id="proposito" class="chosen-select">
+                                    <option value="" disable>Proposito PED</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                
+                            </div>
+                            <div class="col-md-2">
+                                <select name="indicador" id="indicador" class="chosen-select">
+                                    <option value="" disable>Seleccionar indicador</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                
+                            </div>
+                            <div class="col-md-2">                                
+                                <button type="button" class="btn btn-inverse">Agregar indicador</button>                                
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-inverse">Limpiar</button>   
+                            </div>
                             
-                            <button type="button" class="btn btn-inverse">Agregar indicador</button>
-                            <button type="button" class="btn btn-inverse">Limpiar</button>         
                         </div>
                         </center><!-- end info-container -->
                     </li>
@@ -115,6 +126,8 @@
         <script src="assets/crossbrowserjs/respond.min.js"></script>
         <script src="assets/crossbrowserjs/excanvas.min.js"></script>
     <![endif]-->
+
+    <script type="text/javascript" src="<?=base_url();?>plugins/chosen/chosen.jquery.js"></script>
     <script src="<?=base_url();?>js/amchart/core.js"></script>
     <script src="<?=base_url();?>js/amchart/charts.js"></script>
     <script src="<?=base_url();?>js/amchart/animated.js"></script>
@@ -128,6 +141,7 @@
             App.init();
         });
         
+        $('.chosen-select').chosen({'width':'100%'});
     </script>
 </body>
 </html>

@@ -26,6 +26,7 @@
     <link href="<?=base_url();?>css/general/general.css" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/fc-3.2.5/fh-3.1.4/r-2.2.2/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="<?=base_url();?>plugins/chosen/chosen.css">
 
 
     <style type="text/css">        
@@ -61,19 +62,27 @@
                     
                         <!-- begin info-container -->
                         <div class="row">
-                            <select name="sel1" id="propositoped">
-                                <option value="" disable>Proposito PED</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                            </select>
-                            <select name="sel2" id="temsectorial">
-                                <option value="" disable>Seleccionar indicador</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            </select>
+                            <div class="col-md-2">
+                                <select name="indicador" id="indicador" class="chosen-select">
+                                    <option value="" disable>Indicador</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                
+                            </div>
+                            <div class="col-md-2">
+                                <select name="periodicidad" id="periodicidad" class="chosen-select">
+                                    <option value="" disable>Periodicidad</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                                
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-inverse">Aplicar filtro</button>
+                                
+                            </div>
                             
-                            <button type="button" class="btn btn-inverse">Agregar indicador</button>
-                            <button type="button" class="btn btn-inverse">Limpiar</button>         
                         </div>
                         </center><!-- end info-container -->
                     </li>
@@ -211,7 +220,7 @@
     
  
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/fc-3.2.5/fh-3.1.4/r-2.2.2/datatables.min.js"></script>
-
+    <script type="text/javascript" src="<?=base_url();?>plugins/chosen/chosen.jquery.js"></script>
 
     <script src="<?=base_url();?>plugins/js-cookie/js.cookie.js"></script>
     <script src="<?=base_url();?>plugins/scrollMonitor/scrollMonitor.js"></script>
@@ -223,6 +232,7 @@
             App.init();
 
             $('#table_id').DataTable();
+            $('.chosen-select').chosen({'width':'100%'});
         });
         
     </script>
