@@ -61,7 +61,7 @@
                     <div class="col-md-6 col-sm-6">
                         <!-- begin about -->
                         <div class="about">
-                            <h2>¿Qué es SEI</h2>
+                            <h2><b>¿Qué es SEI?</b></h2>
                             <h4>Seguimiento y Evaluación <br>de Indicadores</h4>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra
@@ -77,9 +77,9 @@
                     </div>
                     <!-- end col-4 -->                    
                     <!-- begin col-4 -->
-                    <div class="col-md-6 col-sm-6">
-                        <h1>SEI</h1>
-                        <h4>SEGUIMIENTO Y EVALUACÓN <br> DE INDICADORES</h4>
+                    <div class="col-md-4 col-sm-4 col-md-offset-2"> <br><br><br><br><br>
+                        <h1 align="left"><b>SEI</b></h1>
+                        <h4 align="left">SEGUIMIENTO Y EVALUACIÓN <br> DE INDICADORES</h4>
                     </div>
                     <!-- end col-4 -->
                 </div>
